@@ -1,4 +1,4 @@
-package br.com.etechoracio.pw2jpa;
+package br.com.etechoracio.pw2jpa.br.com.etechoracio.pw2jpa;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
