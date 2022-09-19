@@ -18,13 +18,13 @@ public class Proprietario {
 	@Column(name="TX_NOME")
 	private String nome;
 	
-	@Column(name="TX_PROPRIETARIO")
+	@Column(name="TP_PROPRIETARIO")
 	private TipoPessoaEnum tipo;
 	
 	@Column(name="TX_DOCUMENTO")
 	private String documento;
 	
 	@OneToOne
-	@JoinColumn(name="TX_TELEFONE")
+	@JoinColumn(name="ID_TELEFONE")
 	private Telefone telefone;
 }

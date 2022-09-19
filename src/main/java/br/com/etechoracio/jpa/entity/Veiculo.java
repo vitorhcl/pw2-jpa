@@ -28,5 +28,9 @@ public class Veiculo {
 
 	@Column(name = "VLR_PRECO")
 	private Double valor;
+	
+	@ManyToOne
+	@JoinColumn(name = "ID_PROPRIETARIO")
+	private Proprietario proprietario;
 }
 
