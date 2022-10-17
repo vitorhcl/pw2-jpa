@@ -1,5 +1,7 @@
 package br.com.etechoracio.jpa.entity;
 
+import java.util.List;
+
 import javax.persistence.*;
 
 import lombok.*;
@@ -28,5 +30,9 @@ public class Veiculo {
 
 	@Column(name = "VLR_PRECO")
 	private Double valor;
+	
+	@ManyToMany
+	@JoinTable(name = "TBL_REL_VEICULO_ACESSORIO", joinColumns = @JoinColumn(name = "id_veiculo"), inverseJoinColumns = @JoinColumn(name = "id_acessorio"))
+	private List<Acessorio> acessorio;
 }
 
