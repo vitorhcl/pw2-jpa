@@ -34,5 +34,9 @@ public class Veiculo {
 	@ManyToMany
 	@JoinTable(name = "TBL_REL_VEICULO_ACESSORIO", joinColumns = @JoinColumn(name = "id_veiculo"), inverseJoinColumns = @JoinColumn(name = "id_acessorio"))
 	private List<Acessorio> acessorio;
+
+	@ManyToOne
+	@JoinColumn(name = "ID_PROPRIETARIO")
+	private Proprietario proprietario;
 }
 

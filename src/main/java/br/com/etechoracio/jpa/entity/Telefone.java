@@ -2,8 +2,7 @@ package br.com.etechoracio.jpa.entity;
 
 import javax.persistence.*;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 @Getter
 @Setter
