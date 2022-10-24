@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import br.com.etechoracio.jpa.entity.AgenteAutuador;
 import br.com.etechoracio.jpa.entity.Usuario;
+import br.com.etechoracio.jpa.repository.GrupoUsuarioRepository;
 import br.com.etechoracio.jpa.repository.UsuarioRepository;
 
 @SpringBootApplication
@@ -14,10 +15,12 @@ public class Pw2JpaApplication implements CommandLineRunner{
 
 	@Autowired
 	private UsuarioRepository usuarioRepository;
-	
+	@Autowired
+	private GrupoUsuarioRepository grupoUsuarioRepository;
 	public static void main(String[] args) {
 		SpringApplication.run(Pw2JpaApplication.class, args);
 	}
+	
 
 	@Override
 	public void run(String... args) throws Exception {
