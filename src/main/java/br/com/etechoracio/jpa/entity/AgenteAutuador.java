@@ -13,6 +13,7 @@ import lombok.*;
 public class AgenteAutuador {
 	
 	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "ID_AGENTE_AUTUADOR")
 	private Long id;
 	

@@ -10,7 +10,8 @@ import lombok.*;
 @Entity
 @Table(name = "TBL_ACESSORIO")
 public class Acessorio {
-	@Id 
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "ID_ACESSORIO")
 	private long id;
 

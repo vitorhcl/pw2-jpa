@@ -10,6 +10,7 @@ import lombok.*;
 @Table(name = "TBL_TELEFONE")
 public class Telefone {
 	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "ID_TELEFONE")
 	private Long id;
 	

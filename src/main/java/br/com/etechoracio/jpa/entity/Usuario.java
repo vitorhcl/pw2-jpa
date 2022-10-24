@@ -5,15 +5,15 @@ import java.util.List;
 
 import javax.persistence.*;
 
-import lombok.Getter;
-import lombok.Setter;
-
+import lombok.*;
+@Builder
 @Getter
 @Setter
 @Entity
 @Table (name = "TBL_USUARIO")
 public class Usuario {
 	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "ID_USUARIO")
 	private long id;
 	@Column(name = "TX_NOME")

@@ -11,6 +11,7 @@ import lombok.*;
 @Table(name = "TBL_PROPRIETARIO")
 public class Proprietario {
 	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "ID_PROPRIETARIO")
 	private Long id;
 	
